@@ -1,0 +1,18 @@
+# Clean memory and environment
+reset;
+purge;
+
+# Upload model
+#model OptiComb-Tarea2-Punto2a.mod;
+#model OptiComb-Tarea2-Punto2b.mod;
+model OptiComb-Tarea2-Punto2c.mod;
+
+# Upload data
+#data com_crime_punto2b.dat;
+data com_crime.dat;
+
+# Change optimizator
+option solver cplex;
+
+# Solve the model
+solve;
